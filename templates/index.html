@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method="post" action="/increment">
+      <button>Turn it up 2 steps</button>
+    </form>
+    <p>I clicked you {{ session['counter'] }} times</p>
+    <form method="post" action="/reset">
+      <button>Reset this counter</button>
+    </form>
+  </body>
+</html>
